@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="name" id="name" />
+    <input type="button" name="sayButton" value="Say" id="sayButton" />
+
+    <script type="module">
+      document.getElementById("sayButton").onclick = function () {
+        import("./alert.js").then((module) => {
+          const value = document.getElementById("name").value;
+          module.alertHello(value);
+        });
+      };
+    </script>
+  </body>
+</html>

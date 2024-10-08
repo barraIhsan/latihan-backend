@@ -1,0 +1,22 @@
+{
+  "name": "unit-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runTestsByPath ./test/sum.test.js",
+    "test1": "jest --runTestsByPath ./test/expect.test.js",
+    "async": "jest --runTestsByPath ./test/helloAsync.test.js",
+    "leap": "jest --runTestsByPath ./test/leap.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}

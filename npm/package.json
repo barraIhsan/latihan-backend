@@ -1,0 +1,11 @@
+{
+  "name": "@barrsan_/npm-development",
+  "version": "1.0.3",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
